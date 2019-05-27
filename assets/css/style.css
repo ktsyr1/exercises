@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800,200);
+@import url(bootstrap.min.css );
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+body {
+  padding-top: 54px;
+  margin:0;font-family: 'Tajawal', sans-serif;
+  text-align: center;
+
+}
+p  {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+  .bgimg{
+    height:60px;
+    }
+}
+  section {
+   	margin: 30px 0 0 0;
+}
+
+@media (max-width: 992px) {
+  .bgimg {
+    height:60px;
+    }
+}
+@media (max-width: 550) {
+  .bgimg {
+    height:60px;
+    }
+}
+/*********************************************************************
+|                  تصميم وبرمجة قتيبة                                       |
+|                مشروع دليل المراكز الطبية                                     |
+**********************************************************************/
+/*
+الوان الموقع
+*/       
+.bgf {
+   background-color:#ffffff;   
+}
+.bg1 {  
+background-color:
+}
+/*------تجاوب فديوهات  يوتيوب------*/
+.video-container {
+ position: relative;
+ padding-bottom: 56.25%;
+ padding-top: 30px;
+ height: 0;
+ overflow: hidden;
+}
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+.entry-content img, 
+.entry-content iframe, 
+.entry-content object, 
+.entry-content embed {
+        max-width: 100%;}
+/*-----قيد التطوير------*/
+.display-nav {
+  	display: inline-block;
+  	float: left;
+}
+body {
+   text-align: center;
+}
+.img {
+  	Width:30px;
+}
+    	
+.bg{
+	 background-color: #00A99D;
+	 border-color:#00A99D;    
+}
+.bg2{
+	 background-color: #BFDC95;    
+}
+.box-s {
+   box-shadow: 1px 1px 1px black;
+}
+.imgo{
+   position:absolute;
+   border-radius: 50%;
+   height:80px;
+   background-color: #BFDC95 ;
+   box-shadow: 0 .1rem 0.2rem rgba(0,0,0,.15)!important;
+   width:80px;
+   margin: -40px 10px 0 0;
+   padding:20px 7px 10px 10px;
+   z-index:1;
+}       
+.imgo2{
+   position:absolute;
+   border-radius: 50% 0 50% 50%;    
+   background-color: #BFDC95 ;
+   box-shadow: 0 .1rem 0.2rem rgba(0,0,0,.15)!important;
+   width:50px;
+   margin:0;
+   padding:12px 7px 10px 10px;
+   z-index:3;
+   opacity:0.95;
+}   
+.imgo3{
+   position:absolute;
+   border-radius: 50% 0 50% 50%;
+   height:45px;
+   background-color: #B0DC95 ;
+   box-shadow: 0 .1rem 0.2rem rgba(0,0,0,.15)!important;
+   width:45px;
+   margin:0;
+   padding:12px 7px 10px 10px;
+   z-index:1;
+   opacity:0.5;
+}
+.h {
+   height:200px;
+} 
+.bor{  border-radius:  20px ;
+   margin: 10px;  
+   height:400px;
+}       
+.bor:hover{
+   margin: 10px;
+    
+   box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important ;
+}   
+.bor3{border-radius: 20px ;
+   margin: 10px;  
+   height:200px;
+   padding:10px;
+}       
+.bor3:hover{
+   margin: 10px;
+   border-radius: 20px ;
+   height:200px;
+   box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important ;
+}   
+.bor1{
+   margin: 10px;
+   height:377px;
+}   
+.bor1:hover{    
+   border-radius:0 0 20px 20px ;
+      box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important ;
+}   
+.wi {
+   width:100%;
+}
+.bgt {
+   padding:80px;
+   font-size:20px;
+}
+.img2 {
+   width:100%;
+}
+.box {
+   display: inline-block;
+   text-align:right;
+   margin: 15px 0 0 0;
+   padding:25px 13px 15px 15px;
+}
+.p2{
+   display: inline-block;   
+}
+.p-box {
+    padding: 3px;
+    box-shadow: 0 .1rem 0.2rem rgba(0,0,0,.15)!important;
+    width: 300px;
+    margin: 5px;
+}
+footer{
+   Width:100%;
+}
+.imgh  {
+   opacity:0.3;
+   background-repeat: no-repeat;
+   max-width: 100%; 
+   height: 200px;
+   background: url("assets/img/b.png")no-repeat center center; 
+   background-size: cover;
+}
+footer {
+   clear :both ; 
+}
+.contact {
+   align-content: center;
+   text-align: center;
+   width: 300px;
+   padding: 20px;
+   margin: 100px auto 50px auto;
+   border-radius: 20px;
+}
+.clip-1 {
+ 	background-size: cover;
+  background-position: -100px 0;    
+  background-repeat: no-repeat;
+   -webkit-clip-path: ellipse(90% 70% at 0% 50%);
+    clip-path: ellipse(90% 70% at 50% 20%);
+     -webkit-shape-outside: ellipse(90% 70% at 50% 20%);
+      shape-outside: ellipse(90% 70% at 50% 70%);
+      -webkit-shape-margin: 2em;
+      
+       shape-margin: 2em;
+       
+       }
+.card {
+   height: 80px;
+}
