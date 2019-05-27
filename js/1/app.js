@@ -1,5 +1,5 @@
 var add = [
-    "Qotaiba","nor","alaa"
+    "Qotaiba","mohammad","ali"
 ]; 
 var adc = [
     "Qotaiba 3","noor 3","alaa 3"
@@ -7,7 +7,7 @@ var adc = [
 document.getElementById("all")
   .innerHTML = "name ["+ add+"]";
 function sff(){ 
-  var sf = add.lastIndexOf("nor"/*prompt() */);
+  var sf = add.lastIndexOf(prompt() );
    
   if (add[sf]){
     document.getElementById("it")
