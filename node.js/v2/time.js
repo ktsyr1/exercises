@@ -1,8 +1,4 @@
-var Cfull = (  
-7.29+
-10.37+
-12.15+
-15.54+
+var Cfull = (    
 16.37+
 11.05+
 8.49+
@@ -26,9 +22,11 @@ var Cfull = (
 );
 function CfullT() {
     const s = " ساعة", b = "باقي لنهاية الكورس ";
-    var v = Cfull,
+    var v = Cfull;
         v = document.write(
  b + Math.floor(v / 60) + '.' +
  Math.floor(v % 60) + s);
+ console.log(v);
+ 
 };
 CfullT(); 

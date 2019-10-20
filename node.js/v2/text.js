@@ -1,8 +1,36 @@
 
-// ------------------------- error
+// ------------------------- crypto
+// const crypto = require('crypto');
+// const secret = 'ktsyr1';
+// const hash = crypto.createHmac('sha256', secret)
+//     .update('my app nodeJS').digest('hex');
+// console.log(hash);
 
+const crypto = require('crypto');
+const cipher = crypto.createCipheriv("aes192", 'ktsyr1');
+var encrypted = cipher.update("my app nodeJS", 'utf8', 'hax');
+encrypted += cipher.final('hex');
+console.log(encrypted);
 
+// ------------------------- dns
+// const dns = require('dns');
+// dns.lookup('pesktop.com',(err,addresses,family)=>{
+//     console.log('addresses: ',addresses);
+//     console.log('family: ',family);
+// })
+// const dns = require('dns');
+// dns.resolve4('pesktop.com',(err,addresses)=>{
+//     if (err) throw err;
 
+//     console.log(`addresses: ${JSON.stringify(addresses)}`);
+//     addresses.forEach((a)=>{
+//         dns.reverse(a,(err,hostnames)=>{
+//             if (err) {throw err;}
+//             console.log(`reverse for ${a}:${JSON.stringify(hostnames)}`);
+// })})})
+// const dns = require('dns');
+// dns.lookupService('pesktop.com',(err,addresses)=>{
+// });
 // ------------------------- timer
 // setInterval(() => {
 //     console.log("hi")
