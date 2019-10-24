@@ -1,0 +1,2 @@
+var rs = fs.crea teR ea dStream('r es/in put1.txt');
+ gesbe eg ergerg
