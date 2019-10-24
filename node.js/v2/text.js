@@ -1,22 +1,36 @@
  
-// -------------------------  Stream file system
-// -------------------------  Stream file system
-// -------------------------   Sync file system
-const fs = require('fs'); 
+// -------------------------  querystring
+const querystring = require('querystring');
+const text3 = querystring.parse('name=ktsyr1&age=23');
+console.log(text3);
+const text4 = querystring.stringify({name:'ktsyr1','age':'23'});
+console.log(text4);
+
+// -------------------------  path
+// const path =require('path');
+// console.log(path.dirname('c:///apps/node/text'));
+// console.log(path.extname('text.js')); 
+// console.log(path.relative('c:///apps/node/text','/v1'));
+// console.log(path.resolve('text.js'));
+// console.log(path.join('c:/apps/node/text','v2'));
+// console.log(path.format({root:'/root',dir:'c:/apps/node',base:'text.js'}));
+
+// -------------------------     file system
+// const fs = require('fs'); 
 // fs.open('res/input.txt','r+',(err,fd)=>{
 //     if(err){
 //         console.error(err);
 //     }
 //     console.log('true code'); 
 // })
-fs.stat('res/input.txt','r+',(err,stats)=>{
-    if(err){
-        console.error(err);
-    }
-    console.log(stats); 
-    console.log(stats.isFile());
+// fs.stat('res/input.txt','r+',(err,stats)=>{
+//     if(err){
+//         console.error(err);
+//     }
+//     console.log(stats); 
+//     console.log(stats.isFile());
     
-})
+// })
 // -------------------------  Sync file system
 // //  const fs = require('fs'); 
 // fs.readFile('res/input.txt',(err,data)=>{
