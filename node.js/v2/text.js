@@ -1,10 +1,21 @@
- 
+// -------------------------  v8
+const v8 = require('v8');
+
+
+// -------------------------  Assert
+// const assert = require('assert');
+// function res(a,b,c,d) {
+//     return a+b+c+d
+// } 
+// var ex =res(1,2,3,4);
+//  assert(ex===10 ,'non 10')//ture code 1
+//  assert(ex===12 ,'non 10')//false code 2
 // -------------------------  querystring
-const querystring = require('querystring');
-const text3 = querystring.parse('name=ktsyr1&age=23');
-console.log(text3);
-const text4 = querystring.stringify({name:'ktsyr1','age':'23'});
-console.log(text4);
+// const querystring = require('querystring');
+// const text3 = querystring.parse('name=ktsyr1&age=23');
+// console.log(text3);
+// const text4 = querystring.stringify({name:'ktsyr1','age':'23'});
+// console.log(text4);
 
 // -------------------------  path
 // const path =require('path');
@@ -48,9 +59,19 @@ console.log(text4);
 // const rs = fs.createReadStream('res/input1.txt');// ------  API Pipe file system  
 // const ws = fs.createWriteStream('data/output1.txt');
 // rs.pipe(ws);
+// ------
 // fs.createReadStream('data/output1.txt').pipe(zlib.createGzip()).pipe(fs.createWriteStream('data/output1.txt.gz')); 
 // fs.createReadStream('data/output1.txt.gz').pipe(zlib.createGunzip()).pipe(fs.createWriteStream('data/output2.txt'));
+// ------
+// const gzip = zlib.createGzip();
 
+// const input= fs.createReadStream('res/input.txt');
+// const output= fs.createWriteStream('data/input.txt.gz');
+// input.pipe(gzip).pipe(output);
+// const unzip = zlib.createGunzip();//L2 //err
+// const input2= fs.createReadStream('data/input.txt.gz');//L2
+// const output2= fs.createWriteStream('data/output2.txt');//L2
+// input2.pipe(unzip).pipe(output2);//L2
 // -------------------------  Stream file system
 // const fs = require('fs');
 // var data = 'ktsyr1 2345 app';
