@@ -1,6 +1,24 @@
 
 // event + 
 
+// -------------------------  event
+const event =require('events');
+const eventEmitter = new event.EventEmitter();
+const connectHandle =  ()=> {
+console.log('event connected 1');
+eventEmitter.emit('datareceived'); 
+eventEmitter.emit('datas'); 
+}
+eventEmitter.on('connection',connectHandle);
+eventEmitter.on('datareceived',()=>{
+    console.log('data rec');
+})
+eventEmitter.on('datas',()=>{
+    console.log('data ss');
+})
+eventEmitter.emit('connection');
+console.log('app finish');
+
 // -------------------------  block I/O
 // const fs = require('fs');
 // var dataB = fs.readFileSync('res/i.txt') ;
