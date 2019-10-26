@@ -1,3 +1,17 @@
+
+// event + 
+
+// -------------------------  block I/O
+// const fs = require('fs');
+// var dataB = fs.readFileSync('res/i.txt') ;
+//     console.log(dataB.toString());
+//     console.log('false app block');
+// fs.readFile('res/input.txt',(err,data)=>{
+//     if(err){return console.error(err); }
+//     console.log(data.toString());
+// })
+// console.log('ture app block');
+
 // -------------------------  v8
 // const v8 = require('v8');
 // console.log(v8.getHeapStatistics()); 
@@ -9,8 +23,8 @@
 //     return a+b+c+d
 // } 
 // var ex =res(1,2,3,4);
-//  assert(ex===10 ,'non 10')//ture code 1
-//  assert(ex===12 ,'non 10')//false code 2
+// assert(ex===10 ,'non 10')//ture code 1
+// assert(ex===12 ,'non 10')//false code 2
 // -------------------------  querystring
 // const querystring = require('querystring');
 // const text3 = querystring.parse('name=ktsyr1&age=23');
