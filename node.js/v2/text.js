@@ -1,23 +1,31 @@
 
-// event + 
-
+// -------------------------  create folder fs
+// var fs = require("fs");
+// if (fs.existsSync("data")) {
+// 	console.log("Directory already created");
+// } else { 
+// 	fs.mkdir("data", function(err) { 
+// 		if (err) {console.log(err);
+// 		} else {console.log("Directory Created");
+// }});}
+        
 // -------------------------  event
-const event =require('events');
-const eventEmitter = new event.EventEmitter();
-const connectHandle =  ()=> {
-console.log('event connected 1');
-eventEmitter.emit('datareceived'); 
-eventEmitter.emit('datas'); 
-}
-eventEmitter.on('connection',connectHandle);
-eventEmitter.on('datareceived',()=>{
-    console.log('data rec');
-})
-eventEmitter.on('datas',()=>{
-    console.log('data ss');
-})
-eventEmitter.emit('connection');
-console.log('app finish');
+// const event =require('events');
+// const eventEmitter = new event.EventEmitter();
+// const connectHandle =  ()=> {
+// console.log('event connected 1');
+// eventEmitter.emit('datareceived'); 
+// eventEmitter.emit('datas'); 
+// }
+// eventEmitter.on('connection',connectHandle);
+// eventEmitter.on('datareceived',()=>{
+//     console.log('data rec');
+// })
+// eventEmitter.on('datas',()=>{
+//     console.log('data ss');
+// })
+// eventEmitter.emit('connection');
+// console.log('app finish');
 
 // -------------------------  block I/O
 // const fs = require('fs');
@@ -89,13 +97,13 @@ console.log('app finish');
 // -------------------------  zlib file system
 //  const fs = require('fs'); 
 // const zlib = require('zlib'); 
-// const rs = fs.createReadStream('res/input1.txt');// ------  API Pipe file system  
+// const rs = fs.createReadStream('res/input.txt');// ------  API Pipe file system  
 // const ws = fs.createWriteStream('data/output1.txt');
 // rs.pipe(ws);
-// ------
-// fs.createReadStream('data/output1.txt').pipe(zlib.createGzip()).pipe(fs.createWriteStream('data/output1.txt.gz')); 
+// // ------
+// fs.createReadStream('res/input.txt').pipe(zlib.createGzip()).pipe(fs.createWriteStream('data/output1.txt.gz')); 
 // fs.createReadStream('data/output1.txt.gz').pipe(zlib.createGunzip()).pipe(fs.createWriteStream('data/output2.txt'));
-// ------
+// // ------
 // const gzip = zlib.createGzip();
 
 // const input= fs.createReadStream('res/input.txt');
