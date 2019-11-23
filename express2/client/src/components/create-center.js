@@ -22,10 +22,19 @@ export default class CreateCenter extends Component {
  }
 
  componentDidMount(){
-   this.setState({
-     users:['text user'],
-     username:'txet user'
-   })
+  axios.get('http://localhost:5000/user/')
+  .then(response => {
+    if (response.data.length > 0) {
+      this.setState({
+        users: response.data.map(user => user.username),
+        username: response.data[0].username
+      })
+    }
+  })
+  .catch((error) => {
+    console.log(error);
+  })
+
  }
  onChangeUsername(e) {
   this.setState({
@@ -57,6 +66,8 @@ onSubmit(e){
     date : this.state.date 
   }
   console.log(center);
+  axios.post('http://localhost:5000/centar/add',center)
+  .then(res=> console.log(res.data));
   window.location= '/';  
 }
 
@@ -85,10 +96,10 @@ onSubmit(e){
         <div className="form-group"> 
           <label>Description: </label>
           <input  type="text"
-              required
+              
               className="form-control"
               value={this.state.description}
-              onChange={this.onChangeDescription}
+              onChange={this.onChangeDdescription}
               />
         </div>
         <div className="form-group">
