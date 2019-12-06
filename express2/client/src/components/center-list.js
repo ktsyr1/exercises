@@ -10,7 +10,8 @@ const Center = props => (
     <td>{props.center.date.substring(0,10)}</td>
     <td>
       <Link to={"/edit/"+props.center._id}>edit</Link> ||
-       <a href="#l" onClick={() => { props.deleteCenter(props.center._id) }}>delete</a>
+       <a href="#l" onClick={() => { 
+         props.deleteCenter(props.center._id) }}>delete</a>
     </td>
   </tr>
 )
