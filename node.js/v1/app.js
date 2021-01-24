@@ -3,8 +3,6 @@ const fs = require('fs');
 
 const hostname = '127.0.0.1';
 const port = 3003;
-// 
-  
 function route( page , res) {
     fs.readFile(page,(err , data) => {
     res.statusCode = 200;
@@ -24,14 +22,13 @@ const server = http.createServer( (req, res) => {
         default :
                 route('index.html', res) 
                 break;
-        
     }
-    // fs.readFile('index.html' , (err , data) => {
-    //  res.statusCode = 200;
-    //  res.setHeader('Content-Type', 'text/plain');
-    //  res.write('data')
-    //  res.end('sfdf fddsf\n');
-    // })
+    fs.readFile('index.html' , (err , data) => {
+     res.statusCode = 200;
+     res.setHeader('Content-Type', 'text/plain');
+     res.write('data')
+     res.end('sfdf fddsf\n');
+    })
 });
 
 server.listen(port, hostname, () => {
